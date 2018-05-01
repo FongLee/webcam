@@ -33,7 +33,7 @@ int main (int argc, char **argv)
 	sockaddr_in sin;
 	sin.sin_family = AF_INET;
 	sin.sin_port = htons(RECV_PORT);
-	sin.sin_addr.s_addr = inet_addr("192.168.1.116");
+	sin.sin_addr.s_addr = inet_addr("192.168.3.116");
 
 	//调用bind函数把套接字绑定到一个监听端口上。注意bind函数需要接受一个sockaddr_in结构体
     //作为参数，因此在调用bind函数之前, 程序要先声明一个 sockaddr_in结构体,用memset函数将
